@@ -7,8 +7,8 @@ cat > ~/.emacs.d/init.el <<- EOM
 (load "~/.emacs.d/init-packages")
 (show-paren-mode 1)
 (setq show-paren-delay 0)
-(add-hook 'after-init-hook (lambda () (load-theme 'sanityinc-tomorrow-eighties)))
-(setq linum-format "%4d | ")
+(add-hook 'after-init-hook (lambda () (load-theme 'zenburn)))
+(setq linum-format "%3d | ")
 (require 'expand-region)
 (global-set-key (kbd "C-L") 'er/expand-region)
 EOM
@@ -37,7 +37,7 @@ cat > ~/.emacs.d/init-packages.el <<- EOM
         yasnippet pyvenv highlight-indentation find-file-in-project 
         sql-indent sql exec-path-from-shell iedit
         auto-complete popup let-alist magit minimap popup expand-region 
-	color-theme-sanityinc-tomorrow gruber-darker-theme))
+	color-theme-sanityinc-tomorrow gruber-darker-theme zenburn-theme))
 
 
 ; activate all the packages
